@@ -134,7 +134,6 @@ button:hover {
     font-size: 24px; /* Adjust font size for emphasis */
 }
 
-}
 
 @keyframes animatetop {
     from {top: -300px; opacity: 0}
