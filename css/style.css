@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    color: #4a4a4a;
+    margin-bottom: 20px;
+}
+
+label, input, button {
+    margin: 10px 0;
+}
+
+label {
+    color: #4a4a4a;
+}
+
+#workingDays {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccd0d5;
+    border-radius: 5px;
+    background: white;
+    color: #333;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#workingDays:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 10px rgba(74, 144, 226, 0.2);
+    outline: none;
+}
+
+.table input {
+    padding: 10px;
+    width: calc(100% - 22px);
+    border: 1px solid #ccd0d5;
+    border-radius: 5px;
+    background: white;
+    color: #333;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.table input:focus {
+    border-color: #4a90e2;
+    box-shadow: 0 0 10px rgba(74, 144, 226, 0.2);
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    background: #33FF77;
+    color: black;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s, box-shadow 0.3s;
+}
+
+button:hover {
+    background: rgb(208, 252, 223);
+    box-shadow: 0 0 10px rgba(53, 122, 189, 0.3);
+}
+
+.table {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 600px;
+}
+
+@media(min-width: 768px) {
+    .table {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+.table div {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.table strong {
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    color: #4a4a4a;
+}
+
+/* General Modal Styles */
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgb(0,0,0); 
+    background-color: rgba(0,0,0,0.4); 
+}
+
+/* Modal Content */
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto; 
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; 
+    max-width: 600px; 
+    border-radius: 10px;
+    text-align: center;
+}
+
+/* Modal Text Highlight */
+.modal-content strong {
+    color: #1e90ff; /* Change to a color that fits your design */
+    font-weight: bold;
+    font-size: 24px; /* Adjust font size for emphasis */
+}
+
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
